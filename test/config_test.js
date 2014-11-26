@@ -5,7 +5,7 @@ var config = require('../lib/config');
 describe('config', function() {
   it('should set a variable and retrieve the same value', function(done) {
     var inputValue = 'random_Value';
-    config.put('test', inputValue);
+    config.set('test', inputValue);
     expect(config.get('test')).to.equal(inputValue);
     done();
   });
