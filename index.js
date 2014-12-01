@@ -18,6 +18,9 @@ module.exports = (function() {
     processes[processName] = processFunction;
   }
 
+  // kue drop-in
+  Qued.prototype.process = Qued.prototype.addProcess;
+
   Qued.prototype.createWorker = function() {
     return new Worker(processes);
   }
