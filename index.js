@@ -1,5 +1,3 @@
-var Worker = require('./lib/worker');
-var Consumer = require('./lib/consumer');
 var _ = require('lodash');
 var config = require('./lib/config');
 
@@ -22,10 +20,12 @@ module.exports = (function() {
   Qued.prototype.process = Qued.prototype.addProcess;
 
   Qued.prototype.createWorker = function() {
+    var Worker = require('./lib/worker');
     return new Worker(processes);
   }
 
   Qued.prototype.createConsumer = function() {
+    var Consumer = require('./lib/consumer');
     return new Consumer();
   }
 
