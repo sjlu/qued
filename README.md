@@ -1,5 +1,7 @@
 ## qued
 
+[![Circle CI](https://circleci.com/gh/sjlu/qued.svg?style=svg)](https://circleci.com/gh/sjlu/qued)
+
 A very simple queue/dequeue worker inspired by [kue](https://github.com/learnboost/kue). In fact, it is so similar that it is essentially a drop-in replacement. It runs on Node.js applications and requires Redis for storage.
 
 This queue has a mantra of "simplicity over functionality" where we want less complexity in code and more stability in the worker. Therefore, there is no extra queues (like completed and error) and executes one job at a time.
