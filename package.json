@@ -1,6 +1,6 @@
 {
   "name": "qued",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A simple worker queue that works.",
   "main": "index.js",
   "scripts": {
